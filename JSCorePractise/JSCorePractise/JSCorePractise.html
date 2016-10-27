@@ -15,12 +15,20 @@
 			alert(argum1);
 		};
 
+		var bbb = function () {
+	    	webkit.messageHandlers.callbackHandler.postMessage("Hello from JavaScript");
+		};
+
+		function redHeader() {
+    		document.querySelector('h1').style.color = "red";
+		}
+
 	</script>
 </head>
 <body>
-	
-	<input type='Button' value='按钮' onClick ='btnOnClicked()' />
-	<input type='Button' value='jscore' onClick='simplifyString("123")' >
+	<h1>WKWebView Test</h1>
+	<input type='Button' value='按钮' onClick ='bbb()'/>
+	<input type='Button' value='jscore' onClick='simplifyString("123")'/>
 </body>
 
 </html>
