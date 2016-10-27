@@ -12,6 +12,9 @@
 		2AA03A951DC0A880000FD302 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2AA03A931DC0A880000FD302 /* Main.storyboard */; };
 		2AA03A971DC0A880000FD302 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2AA03A961DC0A880000FD302 /* Assets.xcassets */; };
 		2AA03A9A1DC0A880000FD302 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2AA03A981DC0A880000FD302 /* LaunchScreen.storyboard */; };
+		2AA03AA21DC0AC2D000FD302 /* JSCorePractise.html in Resources */ = {isa = PBXBuildFile; fileRef = 2AA03AA11DC0AC2D000FD302 /* JSCorePractise.html */; };
+		2AB6FBEE1DC1A88B00EAABFF /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB6FBED1DC1A88B00EAABFF /* Person.swift */; };
+		2AB6FBF01DC1EC2400EAABFF /* WKWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB6FBEF1DC1EC2400EAABFF /* WKWebViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		2AA03A961DC0A880000FD302 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2AA03A991DC0A880000FD302 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2AA03A9B1DC0A880000FD302 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2AA03AA11DC0AC2D000FD302 /* JSCorePractise.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = JSCorePractise.html; sourceTree = "<group>"; };
+		2AB6FBED1DC1A88B00EAABFF /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		2AB6FBEF1DC1EC2400EAABFF /* WKWebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WKWebViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,12 +60,15 @@
 		2AA03A8E1DC0A880000FD302 /* JSCorePractise */ = {
 			isa = PBXGroup;
 			children = (
+				2AA03AA11DC0AC2D000FD302 /* JSCorePractise.html */,
 				2AA03A8F1DC0A880000FD302 /* AppDelegate.swift */,
 				2AA03A911DC0A880000FD302 /* ViewController.swift */,
 				2AA03A931DC0A880000FD302 /* Main.storyboard */,
 				2AA03A961DC0A880000FD302 /* Assets.xcassets */,
 				2AA03A981DC0A880000FD302 /* LaunchScreen.storyboard */,
 				2AA03A9B1DC0A880000FD302 /* Info.plist */,
+				2AB6FBED1DC1A88B00EAABFF /* Person.swift */,
+				2AB6FBEF1DC1EC2400EAABFF /* WKWebViewController.swift */,
 			);
 			path = JSCorePractise;
 			sourceTree = "<group>";
@@ -127,6 +136,7 @@
 				2AA03A9A1DC0A880000FD302 /* LaunchScreen.storyboard in Resources */,
 				2AA03A971DC0A880000FD302 /* Assets.xcassets in Resources */,
 				2AA03A951DC0A880000FD302 /* Main.storyboard in Resources */,
+				2AA03AA21DC0AC2D000FD302 /* JSCorePractise.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,8 +147,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2AB6FBEE1DC1A88B00EAABFF /* Person.swift in Sources */,
 				2AA03A921DC0A880000FD302 /* ViewController.swift in Sources */,
 				2AA03A901DC0A880000FD302 /* AppDelegate.swift in Sources */,
+				2AB6FBF01DC1EC2400EAABFF /* WKWebViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +273,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 266Y8BZ99E;
 				INFOPLIST_FILE = JSCorePractise/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sina.cjfire.JSCorePractise;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -274,6 +287,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 266Y8BZ99E;
 				INFOPLIST_FILE = JSCorePractise/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sina.cjfire.JSCorePractise;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -300,6 +314,7 @@
 				2AA03AA01DC0A880000FD302 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
