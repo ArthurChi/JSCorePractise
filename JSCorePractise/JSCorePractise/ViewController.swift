@@ -46,17 +46,31 @@ class ViewController: UIViewController {
         let req = URLRequest(url: url, cachePolicy: .reloadIgnoringLocalCacheData, timeoutInterval: 30)//URLRequest(url: url)
         webview.loadRequest(req)
         webview.delegate = self
+        
+        let simplifyString: ((String) -> String) = { input in
+            let mutableString = NSMutableString(string: input) as CFMutableString
+            CFStringTransform(mutableString, nil, kCFStringTransformToLatin, false)
+            CFStringTransform(mutableString, nil, kCFStringTransformStripCombiningMarks, false)
+            return mutableString as String
+        }
+        
+        jsCore?.setObject(unsafeBitCast(simplifyString, to: AnyObject.self), forKeyedSubscript: "simplifyString" as (NSCopying & NSObjectProtocol)!)
     }
-    
-    
     
     @IBAction func webview(_ sender: UIBarButtonItem) {
         webview.reload()
     }
     
     @IBAction func evaluateJS(_ sender: UIBarButtonItem) {
-        let jsValue = jsCore?.evaluateScript("simplifyString('123')")
-        print(jsValue)
+        
+        let obj = ["name":"123", "age":"23"]
+        
+        do {
+            let json = (try String(data: JSONSerialization.data(withJSONObject: obj, options: .init(rawValue: 0)), encoding: String.Encoding.utf8)!)
+            let _ = jsCore?.evaluateScript("nativeCallback('\(json)', simplifyString)")
+        } catch {
+            
+        }
     }
 }
 

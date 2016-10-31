@@ -31,10 +31,16 @@ class WKWebViewController: UIViewController {
         let req = URLRequest(url: url, cachePolicy: .reloadIgnoringLocalCacheData, timeoutInterval: 30)//URLRequest(url: url)
         webView.load(req)
         
-        let userScript = WKUserScript(source: "redHeader()", injectionTime: WKUserScriptInjectionTime.atDocumentEnd, forMainFrameOnly: true)
+        webView.uiDelegate = self
+        
+        let userScript = WKUserScript(source: "function ccc() { return 'ccc' }", injectionTime: WKUserScriptInjectionTime.atDocumentStart, forMainFrameOnly: true)
         contentController.addUserScript(userScript)
         
         contentController.add(self, name: "callbackHandler")
+        
+        webView.evaluateJavaScript("ccc()", completionHandler: { any, error in ()
+            print(any)
+        })
     }
 }
 
@@ -45,5 +51,15 @@ extension WKWebViewController: WKScriptMessageHandler {
         if message.name == "callbackHandler" {
             print("message is \(message.body)")
         }
+    }
+}
+
+extension WKWebViewController: WKUIDelegate {
+    
+    func webView(_ webView: WKWebView, runJavaScriptAlertPanelWithMessage message: String, initiatedByFrame frame: WKFrameInfo, completionHandler: @escaping () -> Void) {
+        
+        print(message)
+        
+        completionHandler()
     }
 }

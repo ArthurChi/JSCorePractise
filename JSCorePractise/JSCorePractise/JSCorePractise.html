@@ -2,6 +2,8 @@
 <head>
 	<script type="text/javascript">
 
+        // window.onload = ccc;
+
 		btnOnClicked = function() {
 			var dele=document.createElement("input");
 			dele.type="button";
@@ -21,6 +23,12 @@
 
 		function redHeader() {
     		document.querySelector('h1').style.color = "red";
+		}
+
+		function nativeCallback(obj, abc) {
+			var j = JSON.parse(obj);
+			alert(j.name);
+            abc('here you are');
 		}
 
 	</script>

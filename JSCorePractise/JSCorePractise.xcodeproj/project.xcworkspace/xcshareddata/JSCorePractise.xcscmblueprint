@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "3031EEC66198DED37F609EB3FE4DB76A80DFBA28",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "3031EEC66198DED37F609EB3FE4DB76A80DFBA28" : 9223372036854775807,
+    "B5A3CDA855FF6BFCCD6E5A5765DE9F78BE640C7A" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "F583E8F4-E44C-49D9-97D6-3047BB9A9D30",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "3031EEC66198DED37F609EB3FE4DB76A80DFBA28" : "JSCorePractise\/",
+    "B5A3CDA855FF6BFCCD6E5A5765DE9F78BE640C7A" : "WebViewJavascriptBridge\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "JSCorePractise",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "JSCorePractise\/JSCorePractise.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:sun-fox-cj\/JSCorePractise.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "3031EEC66198DED37F609EB3FE4DB76A80DFBA28"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/sun-fox-cj\/WebViewJavascriptBridge",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "B5A3CDA855FF6BFCCD6E5A5765DE9F78BE640C7A"
+    }
+  ]
+}
